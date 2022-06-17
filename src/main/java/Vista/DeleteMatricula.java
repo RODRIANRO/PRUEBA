@@ -6,7 +6,7 @@ package Vista;
 
 import Conterolador.MatriculaControl;
 import Vista.*;
-import Controlador.MatriculaControl;
+
 import Modelo.Matricula;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableModel;
