@@ -41,7 +41,7 @@ public class MatriculaControl {
     
     public Matricula modificar(String [] args){
         Auto auto = this.autoServicio.buscarPorPlaca(args[4]);
-        Propietario propietario= this.autoServicio.buscarPorPlaca(Integer.valueOf(args[5]));
+        Propietario propietario= this.autoServicio.buscarPorPlaca(Integer.valueOf(args));
         Matricula matriculaNuevo = new Matricula(Integer.valueOf(args[0]),
                 LocalDate.parse(args[1]),Integer.valueOf(args[2]),Integer.valueOf(args[3]),
                 auto,propietario);

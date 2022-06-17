@@ -13,14 +13,14 @@ public class Auto {
  String placa;
     String marca;
     int precio;
-    int kilometraje;
+    int desgaste;
     String modelo;
 
-    public Auto(String placa, String marca, int precio, int kilometraje, String modelo) {
+    public Auto(String placa, String marca, int precio, int desgaste, String modelo) {
         this.placa = placa;
         this.marca = marca;
         this.precio = precio;
-        this.kilometraje = kilometraje;
+        this.desgaste = desgaste;
         this.modelo = modelo;
     }
     
@@ -59,12 +59,12 @@ public class Auto {
         this.precio = precio;
     }
 
-    public int getKilometraje() {
-        return kilometraje;
+    public int getdesgaste() {
+        return desgaste;
     }
 
-    public void setKilometraje(int kilometraje) {
-        this.kilometraje = kilometraje;
+    public void setdesgaste(int desgaste) {
+        this.desgaste = desgaste;
     }
 
     public String getModelo() {
@@ -78,7 +78,7 @@ public class Auto {
     @Override
     public String toString() {
         return "Auto{" + "placa=" + placa + ", marca=" + marca + ", precio=" 
-                + precio + ", kilometraje=" + kilometraje + ", modelo=" 
+                + precio + ", kilometraje=" + desgaste + ", modelo=" 
                 + modelo + '}';
     }
 

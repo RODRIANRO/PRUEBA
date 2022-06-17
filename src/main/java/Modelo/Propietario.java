@@ -15,8 +15,8 @@ public class Propietario {
   int idPropietario;
     String nombrePropietario;
     LocalDate fechaNacPropietario;
-    int numeroVehiculosPropietario;
-    String tipoLicenciaPropietario;
+    int VehiculosPropietario;
+    String LicenciaPropietario;
     
     public Propietario(int idPropietario, String nombrePropietario, 
             LocalDate fechaNacPropietario, int numeroVehiculosPropietario, 
@@ -24,8 +24,8 @@ public class Propietario {
         this.idPropietario = idPropietario;
         this.nombrePropietario = nombrePropietario;
         this.fechaNacPropietario = fechaNacPropietario;
-        this.numeroVehiculosPropietario = numeroVehiculosPropietario;
-        this.tipoLicenciaPropietario = tipoLicenciaPropietario;
+        this.VehiculosPropietario = numeroVehiculosPropietario;
+        this.LicenciaPropietario = tipoLicenciaPropietario;
     }
     
     
@@ -65,19 +65,19 @@ public class Propietario {
     }
 
     public int getNumeroVehiculosPropietario() {
-        return numeroVehiculosPropietario;
+        return VehiculosPropietario;
     }
 
     public void setNumeroVehiculosPropietario(int numeroVehiculosPropietario) {
-        this.numeroVehiculosPropietario = numeroVehiculosPropietario;
+        this.VehiculosPropietario = numeroVehiculosPropietario;
     }
 
     public String getTipoLicenciaPropietario() {
-        return tipoLicenciaPropietario;
+        return LicenciaPropietario;
     }
 
     public void setTipoLicenciaPropietario(String tipoLicenciaPropietario) {
-        this.tipoLicenciaPropietario = tipoLicenciaPropietario;
+        this.LicenciaPropietario = tipoLicenciaPropietario;
     }
 
     @Override
@@ -85,8 +85,8 @@ public class Propietario {
         return "Propietario{" + "idPropietario=" + idPropietario + 
                 ", nombrePropietario=" + nombrePropietario + 
                 ", fechaNacPropietario=" + fechaNacPropietario + 
-                ", numeroVehiculosPropietario=" + numeroVehiculosPropietario + 
-                ", tipoLicenciaPropietario=" + tipoLicenciaPropietario + '}';
+                ", numeroVehiculosPropietario=" + VehiculosPropietario + 
+                ", tipoLicenciaPropietario=" + LicenciaPropietario + '}';
     }
     
 

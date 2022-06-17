@@ -28,8 +28,8 @@ public class MatriculaServicio implements IMatriculaServicio {
     @Override
     public Matricula modificar(int codigoMatricula,Matricula matriculaNuevo) {
         var posicion=this.buscarPosicion(this.buscarPorCodigo(codigoMatricula));
-        this.listar().get(posicion).setFechaMatricula(matriculaNuevo.getFechaMatricula());
-        this.listar().get(posicion).setNumeroChasis(matriculaNuevo.getNumeroChasis());
+        this.listar().get(posicion).setMatricula(matriculaNuevo.getFechaMatricula());
+        this.listar().get(posicion).setChasis(matriculaNuevo.getChasis());
         this.listar().get(posicion).setDuracionMatricula(matriculaNuevo.getDuracionMatricula());
         this.listar().get(posicion).setAuto(matriculaNuevo.getAuto());
         this.listar().get(posicion).setPropietario(matriculaNuevo.getPropietario());

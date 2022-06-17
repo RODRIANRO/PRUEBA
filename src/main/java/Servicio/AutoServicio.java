@@ -42,7 +42,7 @@ public class AutoServicio  implements IAutoServicio {
         var posicion=this.buscarPosicion(this.buscarPorPlaca(placaAuto));
         this.listar().get(posicion).setMarca(autoNuevo.getMarca());
         this.listar().get(posicion).setPrecio(autoNuevo.getPrecio());
-        this.listar().get(posicion).setKilometraje(autoNuevo.getKilometraje());
+        this.listar().get(posicion).setdesgaste(autoNuevo.getdesgaste());
         this.listar().get(posicion).setModelo(autoNuevo.getModelo());
         return autoNuevo;
     }

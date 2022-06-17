@@ -255,7 +255,7 @@ public class DeleteMatricula extends javax.swing.JFrame {
         {
             datos[i][0]=matricula.getNumero();
             datos[i][1]=matricula.getFechaMatricula();
-            datos[i][2]=matricula.getNumeroChasis();
+            datos[i][2]=matricula.getChasis();
             datos[i][3]=matricula.getDuracionMatricula();
             datos[i][4]=matricula.getAuto().getModelo();
             datos[i][5]=matricula.getPropietario().getNombrePropietario();
@@ -270,7 +270,7 @@ public class DeleteMatricula extends javax.swing.JFrame {
         String arg= this.jTextField1.getText();
         Matricula matricula = this.matriculaControl.buscarMatricula(arg);
         this.jTextField2.setText(matricula.toString());
-        this.jTextField3.setText(String.valueOf(matricula.getNumeroChasis()));
+        this.jTextField3.setText(String.valueOf(matricula.getChasis()));
         this.jTextField4.setText(String.valueOf(matricula.getDuracionMatricula()));
         this.jTextField5.setText(String.valueOf(matricula.getAuto().getPlaca()));
         this.jTextField6.setText(String.valueOf(matricula.getPropietario().getIdPropietario()));

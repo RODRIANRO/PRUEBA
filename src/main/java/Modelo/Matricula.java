@@ -13,27 +13,27 @@ import java.time.LocalDate;
 public class Matricula {
     
  int numero;
-    LocalDate fechaMatricula;
-    int numeroChasis;
+    LocalDate Matricula;
+    int Chasis;
     int duracionMatricula;
     Auto auto;
     Propietario propietario;
 
-    public Matricula(int numero, LocalDate fechaMatricula, int numeroChasis, 
+    public Matricula(int numero, LocalDate Matricula, int Chasis, 
             int duracionMatricula, Auto auto, Propietario propietario) {
         this.numero = numero;
-        this.fechaMatricula = fechaMatricula;
-        this.numeroChasis = numeroChasis;
+        this.Matricula = Matricula;
+        this.Chasis = Chasis;
         this.duracionMatricula = duracionMatricula;
         this.auto = auto;
         this.propietario = propietario;
     }
 
-    public Matricula(int numero, LocalDate fechaMatricula, int numeroChasis, 
+    public Matricula(int numero, LocalDate Matricula, int Chasis, 
             int duracionMatricula) {
         this.numero = numero;
-        this.fechaMatricula = fechaMatricula;
-        this.numeroChasis = numeroChasis;
+        this.Matricula = Matricula;
+        this.Chasis = Chasis;
         this.duracionMatricula = duracionMatricula;
     }
 
@@ -46,19 +46,19 @@ public class Matricula {
     }
 
     public LocalDate getFechaMatricula() {
-        return fechaMatricula;
+        return Matricula;
     }
 
-    public void setFechaMatricula(LocalDate fechaMatricula) {
-        this.fechaMatricula = fechaMatricula;
+    public void setMatricula(LocalDate Matricula) {
+        this.Matricula = Matricula;
     }
 
-    public int getNumeroChasis() {
-        return numeroChasis;
+    public int getChasis() {
+        return Chasis;
     }
 
-    public void setNumeroChasis(int numeroChasis) {
-        this.numeroChasis = numeroChasis;
+    public void setChasis(int Chasis) {
+        this.Chasis = Chasis;
     }
 
     public int getDuracionMatricula() {
@@ -100,7 +100,7 @@ public class Matricula {
     @Override
     public String toString() {
         return "Matricula{" + "numero=" + numero + ", fechaMatricula=" + 
-                fechaMatricula + ", numeroChasis=" + numeroChasis + 
+                Matricula + ", numeroChasis=" + Chasis + 
                 ", duracionMatricula=" + duracionMatricula + ", auto=" + auto.toString()
                 + ", propietario=" + propietario.toString() + '}';
     }
